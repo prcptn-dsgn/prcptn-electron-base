@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Queso Kitchen</title>
+  </head>
+  <body>
+    <div class="titlebar">
+    <ul class="tabs">
+      <li id="overview" class="selected"><a>Overview</a></li>
+      <li id="commands"><a>Commands</a></li>
+      <li id="leveling"><a>Leveling</a></li>
+    </ul>
+      <ul class="appbtns">
+        <li id="minimize"><a>&mdash;</a></li>
+        <li id="maximize"><a>&#128470;</a></li>
+        <li id="close"><a>&#10005;</a></li>
+      </ul>
+    </div>
+    <div class="cont" id="taboverview">
+      <h1>Overview</h1>
+    </div>
+    <div class="cont" id="tabcommands">
+      <h1>Commands</h1>
+    </div>
+    <div class="cont" id="tableveling">
+      <h1>Leveling</h1>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./qwik.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

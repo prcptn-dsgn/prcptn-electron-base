@@ -1,0 +1,14 @@
+{
+  "name": "queso-kitchen",
+  "version": "1.0.0",
+  "description": "Discord.py bot generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "prcptn",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.2.0"
+  }
+}

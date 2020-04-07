@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'MontserratItalic';
+    src: url('./fonts/Montserrat-MediumItalic.ttf');
+}
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+* {
+  font-family: 'MontserratLight';
+}
+
+:root {
+  --bar: #121212;
+  --bg: #252525;
+  --pri: #fc496a;
+  --sec: #9b66ff;
+  --def: white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--def);
+}
+
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  width: 100vw;
+  height: 30px;
+  background: var(--bar);
+  position: fixed;
+  top: 0;
+}
+
+.cont {
+  position: relative;
+  top: 30px;
+  padding: 1vw 4vw;
+}
+
+.titlebar h1 {
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px 10px;
+  color: var(--bg);
+}
+
+.appbtns {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  -webkit-app-region: no-drag;
+}
+
+.appbtns li {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  background: var(--bar);
+  margin: 0;
+  margin-left: -5px;
+  padding: 0;
+  -webkit-app-region: no-drag;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-right: 2px;
+  margin-top: -1px;
+}
+
+.appbtns li a {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.appbtns li:hover {
+  background: var(--bg);
+}
+
+.appbtns li:last-of-type {
+  padding-right: 0 !important;
+  position: relative;
+  top: 1px;
+}
+
+#maximize {
+  display: none !important;
+}
+
+#close:hover {
+  background: var(--pri);
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+.tabs {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  -webkit-app-region: no-drag;
+}
+
+.tabs li {
+  display: inline-block;
+  height: 30px;
+  cursor: pointer;
+  background: var(--bar);
+  margin: 0;
+  margin-left: -5px;
+  padding: 0 18px;
+  -webkit-app-region: no-drag;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.tabs li.selected {
+  background: var(--bg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabs:hover li.selected {
+  border-top-right-radius: 0;
+}
+
+.tabs li a {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li:hover {
+  background: var(--bg);
+}
+
+.tabs li:last-of-type {
+  border-top-right-radius: 5px;
+}
+
+.tabs li:first-of-type {
+  border-top-left-radius: 0;
+}
