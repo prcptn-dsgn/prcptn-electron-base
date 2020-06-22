@@ -1,2 +1,2 @@
 # prcptn-electron-base
-Simple electron boilerplate with prcptn standard ui
+Simple electron boilerplate with basic ui and tabs
